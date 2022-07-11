@@ -17,6 +17,7 @@ resource "aws_codebuild_project" "tf-plan" {
         credential_provider = "SECRETS_MANAGER"
     }
  }
+ 
  source {
      type   = "CODEPIPELINE"
      buildspec = file("buildspec/plan-buildspec.yml")
