@@ -1,5 +1,11 @@
 version: 0.2
 
+env:
+  variables:
+    PROJECT_NAME: code-pipeline
+    TERRAFORM_PLAN_NAME: terraform
+    TERRAFORM_STATE_ROOT: "s3://haitong-aws-cicd-pipeline"
+
 phases:
   pre_build:
     commands:
@@ -7,6 +13,7 @@ phases:
       - ls
       - cd code_pipeline
       - terraform init
+      - yum -y install awscli
       - aws s3 cp --quiet $TERRAFORM_STATE_ROOT/$PROJECT_NAME/terraform.tfstate .
   build:
     commands:
