@@ -1,7 +1,7 @@
 resource "aws_codebuild_project" "tf-plan" {
   name          = "tf-cicd-plan"
   description   = "Plan stage for terraform"
-  service_role  = aws_iam_role.tf-codebuild-role.arn
+  service_role  = "arn:aws:iam::943034724150:role/tf-codebuild-role"
 
   artifacts {
     type = "CODEPIPELINE"
@@ -20,7 +20,7 @@ resource "aws_codebuild_project" "tf-plan" {
 
  source {
      type   = "CODEPIPELINE"
-     buildspec = file("buildspec/plan-buildspec.yml")
+     buildspec = file("plan-buildspec.yml")
  }
     
 }
@@ -28,7 +28,7 @@ resource "aws_codebuild_project" "tf-plan" {
 resource "aws_codepipeline" "cicd_pipeline" {
 
     name = "tf-cicd"
-    role_arn = aws_iam_role.tf-codepipeline-role.arn
+    role_arn = "arn:aws:iam::943034724150:role/tf-codepipeline-role"
 
     artifact_store {
         type="S3"
