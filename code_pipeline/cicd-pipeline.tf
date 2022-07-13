@@ -32,6 +32,7 @@ resource "aws_codebuild_project" "tf-plan" {
         }
   }
 }
+######
 
 # resource "aws_codepipeline" "cicd_pipeline" {
 
