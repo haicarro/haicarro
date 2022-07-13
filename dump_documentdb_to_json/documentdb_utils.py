@@ -7,6 +7,9 @@ from datetime import datetime
 import json
 import os
 import logging
+import ssm_util as ssm
+
+DOCUMENT_DB_PASSWORD = "DOCUMENT_DB_PASSWORD"
 
 class DocumentDbUtils:
 
@@ -16,7 +19,13 @@ class DocumentDbUtils:
 
 
     def get_db_client(self) :
-        password = os.environ['DB_PASSWORD']
+        vpc = os.environ['VPC']
+        password = ""
+        if vpc == "true":
+            password = ssm.get_secret_from_ssm_in_vpc(DOCUMENT_DB_PASSWORD)
+        else:
+            password = ssm.get_secret_from_ssm(DOCUMENT_DB_PASSWORD)
+            
         dbHost = 'docdb-ds-dev.cluster-cwvakta5mgci.ap-southeast-1.docdb.amazonaws.com'
         
         if self.bastion :

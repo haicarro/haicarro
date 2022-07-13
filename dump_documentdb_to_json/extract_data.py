@@ -80,7 +80,7 @@ def extract_workshop(documentDb):
 
 
 if __name__ == "__main__":
-    os.environ["DB_PASSWORD"] = "usingAcousticAiToHelpMechanics"
+    os.environ["VPC"] = "true"
     documentDb = db.DocumentDbUtils(bastion=True)
     documentDb.set_collection(database='test', collection='sounds')
     #extract_workshop(documentDb)
