@@ -4,7 +4,7 @@ phases:
   pre_build:
     commands:
       - echo Build started on `date`
-      - cd codebuild_codepipeline_tf
+      - cd codebuild_codepipeline_tf/terraform
       - terraform init
   build:
     commands:

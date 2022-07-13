@@ -3,7 +3,7 @@ terraform{
     backend "s3" {
         bucket = "haitong-aws-cicd-pipeline"
         encrypt = true
-        key = "terraform.tfstate"
+        key = "terraform_s3.tfstate"
         region = "ap-southeast-1"
     }
 }
