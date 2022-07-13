@@ -1,0 +1,8 @@
+codestar_connector_credentials = "arn:aws:codestar-connections:ap-southeast-1:943034724150:connection/1e0c6766-fe2e-41f7-a5f9-ab90dad30553"
+tf_codebuild_role = "arn:aws:iam::943034724150:role/tf-codebuild-role"
+codebuild_project_name = "codebuild_haitong"
+codepipeline_name = "codepipeline_haitong"
+tf_codepipeline_role = "arn:aws:iam::943034724150:role/tf-codepipeline-role"
+codepipeline_artifacts = "codepipeline-artifacts-haitong"
+git_repo_id = "haicarro/haicarro"
+branch = "main"
