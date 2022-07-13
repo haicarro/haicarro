@@ -13,7 +13,7 @@ phases:
       - ls
       - cd code_pipeline
       - terraform init
-      - yum -y install awscli
+      - sudo -y install awscli
       - aws s3 cp --quiet $TERRAFORM_STATE_ROOT/$PROJECT_NAME/terraform.tfstate .
   build:
     commands:
