@@ -1,12 +1,18 @@
 version: 0.2
+
 phases:
   pre_build:
     commands:
+      - echo Build started on `date`
       - ls
       - cd code_pipeline
       - terraform init
-      - terraform validate
-  
+      - aws s3 cp --quiet $TERRAFORM_STATE_ROOT/$PROJECT_NAME/terraform.tfstate .
   build:
     commands:
+      # TODO manual approval
       - terraform plan
+      - aws s3 cp terraform.tfstate $TERRAFORM_STATE_ROOT/$PROJECT_NAME/
+  post_build:
+    commands:
+      - echo Build completed on `date`
