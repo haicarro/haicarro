@@ -17,54 +17,63 @@ resource "aws_codebuild_project" "tf-plan" {
         credential_provider = "SECRETS_MANAGER"
     }
  }
- 
- source {
-     type   = "CODEPIPELINE"
-     buildspec = file("buildspec/plan-buildspec.yml")
- }
+
+#  source {
+#      type   = "CODEPIPELINE"
+#      buildspec = file("buildspec/plan-buildspec.yml")
+#  }
+    source {
+        type            = "GITHUB"
+        location        = "https://github.com/haicarro/haicarro.git"
+        buildspec       = "buildspec/plan-buildspec.yml"
+        auth {
+            resource = var.codestar_connector_credentials
+            type = "OAUTH"
+        }
+  }
 }
 
-resource "aws_codepipeline" "cicd_pipeline" {
+# resource "aws_codepipeline" "cicd_pipeline" {
 
-    name = "tf-cicd"
-    role_arn = aws_iam_role.tf-codepipeline-role.arn
+#     name = "tf-cicd"
+#     role_arn = aws_iam_role.tf-codepipeline-role.arn
 
-    artifact_store {
-        type="S3"
-        location = aws_s3_bucket.codepipeline_artifacts.id
-    }
+#     artifact_store {
+#         type="S3"
+#         location = aws_s3_bucket.codepipeline_artifacts.id
+#     }
 
-    stage {
-        name = "Source"
-        action{
-            name = "Source"
-            category = "Source"
-            owner = "AWS"
-            provider = "CodeStarSourceConnection"
-            version = "1"
-            output_artifacts = ["tf-code"]
-            configuration = {
-                FullRepositoryId = "haicarro/haicarro"
-                BranchName   = "master"
-                ConnectionArn = var.codestar_connector_credentials
-                OutputArtifactFormat = "CODE_ZIP"
-            }
-        }
-    }
+#     stage {
+#         name = "Source"
+#         action{
+#             name = "Source"
+#             category = "Source"
+#             owner = "AWS"
+#             provider = "CodeStarSourceConnection"
+#             version = "1"
+#             output_artifacts = ["tf-code"]
+#             configuration = {
+#                 FullRepositoryId = "haicarro/haicarro"
+#                 BranchName   = "master"
+#                 ConnectionArn = var.codestar_connector_credentials
+#                 OutputArtifactFormat = "CODE_ZIP"
+#             }
+#         }
+#     }
 
-    stage {
-        name ="Plan"
-        action{
-            name = "Build"
-            category = "Build"
-            provider = "CodeBuild"
-            version = "1"
-            owner = "AWS"
-            input_artifacts = ["tf-code"]
-            configuration = {
-                ProjectName = "tf-cicd-plan"
-            }
-        }
-    }
+#     stage {
+#         name ="Plan"
+#         action{
+#             name = "Build"
+#             category = "Build"
+#             provider = "CodeBuild"
+#             version = "1"
+#             owner = "AWS"
+#             input_artifacts = ["tf-code"]
+#             configuration = {
+#                 ProjectName = "tf-cicd-plan"
+#             }
+#         }
+#     }
 
-}
+# }
