@@ -9,7 +9,7 @@ phases:
   build:
     commands:
       # TODO manual approval
-      - terraform plan
+      - terraform apply --auto-approve
   post_build:
     commands:
       - echo Build completed on `date`

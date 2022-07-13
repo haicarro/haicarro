@@ -7,7 +7,11 @@ variable "tf_codebuild_role" {
   type = string
 }
 
-variable "codebuild_project_name" {
+variable "codebuild_plan_name" {
+  type = string
+}
+
+variable "codebuild_apply_name" {
   type = string
 }
 
