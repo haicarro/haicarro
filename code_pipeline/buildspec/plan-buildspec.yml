@@ -2,6 +2,7 @@ version: 0.2
 phases:
   pre_build:
     commands:
+      - cd code_pipeline
       - terraform init
       - terraform validate
   
