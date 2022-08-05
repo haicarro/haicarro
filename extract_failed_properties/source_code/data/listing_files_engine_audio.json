@@ -1,0 +1,209 @@
+[
+    {
+        "id": 31124006,
+        "inventory_id": 663403,
+        "listing_id": 199691,
+        "inspection_id": 250772,
+        "inspection_type": "auction",
+        "engine_idles_properly": "fail",
+        "engine_idles_properly_notes": "engine mounting worn"
+    },
+    {
+        "id": 17688310,
+        "inventory_id": 450787,
+        "listing_id": 175145,
+        "inspection_id": 146238,
+        "inspection_type": "auction",
+        "engine_idles_properly": "fail",
+        "engine_idles_properly_notes": "throttle body dirty need to service due to idle shaking"
+    },
+    {
+        "id": 41575233,
+        "inventory_id": 800533,
+        "listing_id": 206651,
+        "inspection_id": 353379,
+        "inspection_type": "listing",
+        "engine_starts_properly": "fail",
+        "engine_starts_properly_notes": "ada sedikit getaran terasa sampai dalam interior"
+    },
+    {
+        "id": 41608910,
+        "inventory_id": 802632,
+        "listing_id": 206619,
+        "inspection_id": 353731,
+        "inspection_type": "listing",
+        "engine_noise": "fail",
+        "engine_noise_notes": "Knocking Noise"
+    },
+    {
+        "id": 29173761,
+        "inventory_id": 622154,
+        "listing_id": 196886,
+        "inspection_id": 239961,
+        "inspection_type": "auction",
+        "engine_idles_properly": "fail",
+        "engine_idles_properly_notes": "engine mounting worn engine idle vibrate"
+    },
+    {
+        "id": 22421651,
+        "inventory_id": 518316,
+        "listing_id": 185894,
+        "inspection_id": 187638,
+        "inspection_type": "auction",
+        "engine_idles_properly": "fail",
+        "engine_idles_properly_notes": "idle a bit vibrate suspect engine mounting"
+    },
+    {
+        "id": 29612198,
+        "inventory_id": 630750,
+        "listing_id": 198780,
+        "inspection_id": 244569,
+        "inspection_type": "auction",
+        "engine_idles_properly": "fail",
+        "engine_idles_properly_notes": "engine mounting worn"
+    },
+    {
+        "id": 29874299,
+        "inventory_id": 646221,
+        "listing_id": 199153,
+        "inspection_id": 248007,
+        "inspection_type": "auction",
+        "engine_idles_properly": "fail",
+        "engine_idles_properly_notes": "engine vibrate suspect engine mounting"
+    },
+    {
+        "id": 17259237,
+        "inventory_id": 466739,
+        "listing_id": 173361,
+        "inspection_id": 142800,
+        "inspection_type": "auction",
+        "engine_noise": "fail",
+        "engine_noise_notes": "alternator damage got"
+    },
+    {
+        "id": 29190733,
+        "inventory_id": 629176,
+        "listing_id": 196905,
+        "inspection_id": 240056,
+        "inspection_type": "auction",
+        "engine_idles_properly": "fail",
+        "engine_idles_properly_notes": "engine mounting worn engine idle vibrate"
+    },
+    {
+        "id": 29839124,
+        "inventory_id": 631965,
+        "listing_id": 197130,
+        "inspection_id": 241730,
+        "inspection_type": "auction",
+        "engine_idles_properly": "fail",
+        "engine_idles_properly_notes": "idle vibrate engine mounting worn"
+    },
+    {
+        "id": 22927969,
+        "inventory_id": 555533,
+        "listing_id": 186812,
+        "inspection_id": 195539,
+        "inspection_type": "auction",
+        "engine_idles_properly": "fail",
+        "engine_idles_properly_notes": "vibrate suspect engine mounting"
+    },
+    {
+        "id": 41575554,
+        "inventory_id": 800533,
+        "listing_id": 206651,
+        "inspection_id": 353379,
+        "inspection_type": "listing",
+        "engine_starts_properly": "fail",
+        "engine_starts_properly_notes": "ada sedikit getaran terasa sampai dalam interior"
+    },
+    {
+        "id": 28191739,
+        "inventory_id": 619780,
+        "listing_id": 195255,
+        "inspection_id": 235024,
+        "inspection_type": "auction",
+        "engine_idles_properly": "fail",
+        "engine_idles_properly_notes": "idling vibrate suspect engine mounting worn"
+    },
+    {
+        "id": 28438438,
+        "inventory_id": 626006,
+        "listing_id": 196560,
+        "inspection_id": 237933,
+        "inspection_type": "auction",
+        "engine_idles_properly": "fail",
+        "engine_idles_properly_notes": "engine mounting worn engine vibrate"
+    },
+    {
+        "id": 25307095,
+        "inventory_id": 600212,
+        "listing_id": 190139,
+        "inspection_id": 214697,
+        "inspection_type": "auction",
+        "engine_starts_properly": "fail",
+        "engine_starts_properly_notes": "สตาร์ตไม่ติด ติดยาก ซ่อมGS"
+    },
+    {
+        "id": 30170225,
+        "inventory_id": 649424,
+        "listing_id": 199434,
+        "inspection_id": 244572,
+        "inspection_type": "auction",
+        "engine_noise": "fail",
+        "engine_noise_notes": "alternator noise"
+    },
+    {
+        "id": 25112844,
+        "inventory_id": 594663,
+        "listing_id": 190619,
+        "inspection_id": 214737,
+        "inspection_type": "auction",
+        "engine_starts_properly": "fail",
+        "engine_starts_properly_notes": "ซ่อมGS สตาร์ตติดยาก"
+    },
+    {
+        "id": 17259958,
+        "inventory_id": 454915,
+        "listing_id": 173374,
+        "inspection_id": 138495,
+        "inspection_type": "auction",
+        "engine_idles_properly": "fail",
+        "engine_idles_properly_notes": "engine vibrate caus of engine mounting"
+    },
+    {
+        "id": 18367159,
+        "inventory_id": 445183,
+        "listing_id": 177556,
+        "inspection_id": 147988,
+        "inspection_type": "auction",
+        "engine_idles_properly": "fail",
+        "engine_idles_properly_notes": "idle a bit shaking suspect engine mounting"
+    },
+    {
+        "id": 25654921,
+        "inventory_id": 589417,
+        "listing_id": 190992,
+        "inspection_id": 211800,
+        "inspection_type": "auction",
+        "engine_idles_properly": "fail",
+        "engine_idles_properly_notes": "engine mounting worn"
+    },
+    {
+        "id": 18435858,
+        "inventory_id": 470985,
+        "listing_id": 177705,
+        "inspection_id": 144544,
+        "inspection_type": "auction",
+        "engine_idles_properly": "fail",
+        "engine_idles_properly_notes": "idle a bit shaking cause of engine mounting"
+    },
+    {
+        "id": 16892286,
+        "inventory_id": 451322,
+        "listing_id": 171806,
+        "inspection_id": 138451,
+        "inspection_type": "auction",
+        "engine_idles_properly": "fail",
+        "engine_idles_properly_notes": "idle a bit vibrate"
+    }
+]

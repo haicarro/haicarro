@@ -1,0 +1,24 @@
+id,inventory_id,listing_id,inspection_id,inspection_type,engine_idles_properly,engine_idles_properly_notes,engine_starts_properly,engine_starts_properly_notes,engine_noise,engine_noise_notes
+31124006,663403,199691,250772,auction,fail,engine mounting worn,,,,
+17688310,450787,175145,146238,auction,fail,throttle body dirty need to service due to idle shaking,,,,
+41575233,800533,206651,353379,listing,,,fail,ada sedikit getaran terasa sampai dalam interior,,
+41608910,802632,206619,353731,listing,,,,,fail,Knocking Noise
+29173761,622154,196886,239961,auction,fail,engine mounting worn engine idle vibrate,,,,
+22421651,518316,185894,187638,auction,fail,idle a bit vibrate suspect engine mounting,,,,
+29612198,630750,198780,244569,auction,fail,engine mounting worn,,,,
+29874299,646221,199153,248007,auction,fail,engine vibrate suspect engine mounting,,,,
+17259237,466739,173361,142800,auction,,,,,fail,alternator damage got
+29190733,629176,196905,240056,auction,fail,engine mounting worn engine idle vibrate,,,,
+29839124,631965,197130,241730,auction,fail,idle vibrate engine mounting worn,,,,
+22927969,555533,186812,195539,auction,fail,vibrate suspect engine mounting,,,,
+41575554,800533,206651,353379,listing,,,fail,ada sedikit getaran terasa sampai dalam interior,,
+28191739,619780,195255,235024,auction,fail,idling vibrate suspect engine mounting worn,,,,
+28438438,626006,196560,237933,auction,fail,engine mounting worn engine vibrate,,,,
+25307095,600212,190139,214697,auction,,,fail,สตาร์ตไม่ติด ติดยาก ซ่อมGS,,
+30170225,649424,199434,244572,auction,,,,,fail,alternator noise
+25112844,594663,190619,214737,auction,,,fail,ซ่อมGS สตาร์ตติดยาก,,
+17259958,454915,173374,138495,auction,fail,engine vibrate caus of engine mounting,,,,
+18367159,445183,177556,147988,auction,fail,idle a bit shaking suspect engine mounting,,,,
+25654921,589417,190992,211800,auction,fail,engine mounting worn,,,,
+18435858,470985,177705,144544,auction,fail,idle a bit shaking cause of engine mounting,,,,
+16892286,451322,171806,138451,auction,fail,idle a bit vibrate,,,,
